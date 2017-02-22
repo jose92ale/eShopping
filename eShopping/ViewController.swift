@@ -24,6 +24,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var handle:FIRDatabaseHandle?
     var ref:FIRDatabaseReference?
     
+
+    @IBOutlet weak var nameListField: UITextField!
+    @IBOutlet weak var label: UILabel!
+    
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var quantityField: UITextField!
     @IBAction func Stepper(_ sender: Any) {
@@ -44,6 +48,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 ref?.child("list").childByAutoId().setValue(quantityField.text)
                 quantityField.text = ""
                 nameField.text = ""
+            }
+            
+        }
+        
+        if nameListField.text != ""
+        {
+            //list.append(nameField.text!)
+            
+            ref = FIRDatabase.database().reference()
+            
+            if nameListField.text != ""
+            {
+                ref?.child("listNames").childByAutoId().setValue(nameField.text)
+                label.text = nameListField.text
+                nameListField.text = ""
             }
             
         }

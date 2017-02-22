@@ -163,8 +163,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="S73-1B-iip"/>
                     <connections>
+                        <outlet property="label" destination="MBf-0i-E73" id="VdP-kn-D0b"/>
                         <outlet property="myTableView" destination="Hhk-76-fLP" id="BYM-Gu-KnG"/>
                         <outlet property="nameField" destination="kkC-39-st7" id="5R7-bw-Xrn"/>
+                        <outlet property="nameListField" destination="wTm-dO-cbl" id="L59-Op-EhS"/>
                         <outlet property="quantityField" destination="bWF-u3-548" id="K7p-97-NrE"/>
                     </connections>
                 </viewController>

@@ -12,7 +12,8 @@ class ListTableViewCell: UITableViewCell {
 
     
     
-    @IBOutlet weak var nameLabel: UIView!
+    
+    @IBOutlet weak var itemLabel: UILabel!
     @IBOutlet weak var quantityLabel: UILabel!
     @IBOutlet weak var quantitySpepper: UIStepper!
     

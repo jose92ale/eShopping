@@ -15,6 +15,7 @@
 		FB4C080F1E5D05BE004E9C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4C080D1E5D05BE004E9C86 /* LaunchScreen.storyboard */; };
 		FB4C08171E5D0ECC004E9C86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB4C08161E5D0ECC004E9C86 /* GoogleService-Info.plist */; };
 		FB4C08191E5D0F2A004E9C86 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4C08181E5D0F2A004E9C86 /* ListTableViewCell.swift */; };
+		FBCCEB541E5D396B003B110B /* swifty1.png in Resources */ = {isa = PBXBuildFile; fileRef = FBCCEB531E5D396B003B110B /* swifty1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FB4C08101E5D05BE004E9C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB4C08161E5D0ECC004E9C86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB4C08181E5D0F2A004E9C86 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		FBCCEB531E5D396B003B110B /* swifty1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swifty1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		FB4C08031E5D05BD004E9C86 /* eShopping */ = {
 			isa = PBXGroup;
 			children = (
+				FBCCEB531E5D396B003B110B /* swifty1.png */,
 				FB4C08161E5D0ECC004E9C86 /* GoogleService-Info.plist */,
 				FB4C08041E5D05BD004E9C86 /* AppDelegate.swift */,
 				FB4C08061E5D05BD004E9C86 /* ViewController.swift */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB4C080F1E5D05BE004E9C86 /* LaunchScreen.storyboard in Resources */,
+				FBCCEB541E5D396B003B110B /* swifty1.png in Resources */,
 				FB4C08171E5D0ECC004E9C86 /* GoogleService-Info.plist in Resources */,
 				FB4C080C1E5D05BE004E9C86 /* Assets.xcassets in Resources */,
 				FB4C080A1E5D05BD004E9C86 /* Main.storyboard in Resources */,

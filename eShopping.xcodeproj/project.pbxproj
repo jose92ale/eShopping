@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A1CBBCA5D3B6866C327074A /* Pods_eShopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D146C348519FD26742E368A /* Pods_eShopping.framework */; };
 		FB4C08051E5D05BD004E9C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4C08041E5D05BD004E9C86 /* AppDelegate.swift */; };
 		FB4C08071E5D05BD004E9C86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4C08061E5D05BD004E9C86 /* ViewController.swift */; };
 		FB4C080A1E5D05BD004E9C86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4C08081E5D05BD004E9C86 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59CB605A6F6C9CA56DA5681B /* Pods-eShopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eShopping.release.xcconfig"; path = "Pods/Target Support Files/Pods-eShopping/Pods-eShopping.release.xcconfig"; sourceTree = "<group>"; };
+		6E2332B4D31DBB45A6DCE584 /* Pods-eShopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eShopping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eShopping/Pods-eShopping.debug.xcconfig"; sourceTree = "<group>"; };
+		8D146C348519FD26742E368A /* Pods_eShopping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eShopping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4C08011E5D05BD004E9C86 /* eShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4C08041E5D05BD004E9C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB4C08061E5D05BD004E9C86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A1CBBCA5D3B6866C327074A /* Pods_eShopping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78FF518D1F05672A3560103E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E2332B4D31DBB45A6DCE584 /* Pods-eShopping.debug.xcconfig */,
+				59CB605A6F6C9CA56DA5681B /* Pods-eShopping.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4AEA8B70C33298004A30FFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D146C348519FD26742E368A /* Pods_eShopping.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB4C07F81E5D05BC004E9C86 = {
 			isa = PBXGroup;
 			children = (
 				FB4C08031E5D05BD004E9C86 /* eShopping */,
 				FB4C08021E5D05BD004E9C86 /* Products */,
+				78FF518D1F05672A3560103E /* Pods */,
+				C4AEA8B70C33298004A30FFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB4C08131E5D05BE004E9C86 /* Build configuration list for PBXNativeTarget "eShopping" */;
 			buildPhases = (
+				E18AFE8DDC4DCF53ADFCE5A3 /* [CP] Check Pods Manifest.lock */,
 				FB4C07FD1E5D05BC004E9C86 /* Sources */,
 				FB4C07FE1E5D05BC004E9C86 /* Frameworks */,
 				FB4C07FF1E5D05BC004E9C86 /* Resources */,
+				41BF3A2BE9D658440A3B3221 /* [CP] Embed Pods Frameworks */,
+				2D074685044BD699A06D2C8E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D074685044BD699A06D2C8E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eShopping/Pods-eShopping-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41BF3A2BE9D658440A3B3221 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eShopping/Pods-eShopping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E18AFE8DDC4DCF53ADFCE5A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB4C07FD1E5D05BC004E9C86 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		FB4C08141E5D05BE004E9C86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E2332B4D31DBB45A6DCE584 /* Pods-eShopping.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2BULHRS882;
@@ -272,6 +348,7 @@
 		};
 		FB4C08151E5D05BE004E9C86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59CB605A6F6C9CA56DA5681B /* Pods-eShopping.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2BULHRS882;
